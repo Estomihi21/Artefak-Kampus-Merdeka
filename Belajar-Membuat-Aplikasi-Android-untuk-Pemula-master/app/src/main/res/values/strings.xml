@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sipnosis Buku</string>
+    <string name="buku_name">Judul Buku</string>
+    <string name="penulis">Penulis</string>
+    <string name="nama">Rivan Ari Pratama</string>
+    <string name="email">Rivanpratama83@yahoo.com</string>
+    <string name="favorit">favorit</string>
+    <string name="share">share</string>
+    <string name="tglrilis">tanggal rilis</string>
+    <string name="genre">genre</string>
+    <string name="halaman">halaman</string>
+    <string name="Sipnosis">Sipnosis</string>
+
+
+</resources>

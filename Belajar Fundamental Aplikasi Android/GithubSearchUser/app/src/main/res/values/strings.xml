@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GithubSearchUser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+    <string name="btn_search">Search</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="repository">Repository</string>
+    <string name="value">666</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="github_user">Github User</string>
+    <string name="change_language">Change Language</string>
+    <string name="title_detail">Detail User</string>
+    <string name="tomz_app">Tomz App</string>
+    <string name="favorite_user">Favorite User</string>
+    <string name="Empty">Empty Favorites</string>
+    <string name="Not_Fav">Empty Favorite</string>
+</resources>

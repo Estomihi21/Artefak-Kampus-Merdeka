@@ -30,5 +30,12 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
         -Terdapat halaman about. (Terpenuhi)
         
 
+3. Belajar Prinsip Pemrograman SOLID 
+       
+       Pada Kelas ini peserta diberikan assignment berupa knowledge check
+       
+       
+4. Belajar Fundamental Aplikasi Android
 
 
+       

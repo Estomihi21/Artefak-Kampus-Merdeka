@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".detail.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:theme="@style/CustomToolbarTheme"
+            app:contentScrim="@color/bg_color"
+            app:expandedTitleMarginBottom="20dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/iv_backDrop"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/bg_color"
+                android:contentDescription="@string/app_name"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax" />
+
+            <LinearLayout
+                android:id="@+id/ll_lottie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_button"
+                android:elevation="8dp"
+                android:gravity="center"
+                app:layout_collapseMode="parallax" >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieShare"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/share" />
+
+            </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_title_detail" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<include
+android:id="@+id/main_detail"
+layout="@layout/content_detail" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

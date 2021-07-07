@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyFinalJetpack</string>
+    <string name="details_movie">Details %s</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="director">Director : %s </string>
+    <string name="story_line">Storyline</string>
+    <string name="watch_movie">Watch Movie</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie">MOVIE</string>
+    <string name="tv_show">TV SHOW</string>
+    <string name="favorite">Favorite</string>
+    <string name="share_text">Share This App Right Now</string>
+    <string name="share_message">Watch now %s in MovieDB Right Now</string>
+    <string name="vote_average">Vote Average : %.2f</string>
+    <string name="favorite_activity">Favorite Activity</string>
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+    <string name="nodata">Your Favorite Is Empty</string>
+    <string name="empty_fav_movie">"Your Favorite List Movie Is Empty "</string>
+    <string name="empty_fav_tvShow">Your Favorite List TvShow Is Empty</string>
+    <string name="no_internet">Your Connection Is Loss</string>
+    <string name="tomz_app">Tomz App</string>
+</resources>

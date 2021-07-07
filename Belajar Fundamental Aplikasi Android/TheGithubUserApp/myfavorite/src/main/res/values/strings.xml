@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFavorite</string>
+    <string name="tomz_app">Tomz App</string>
+    <string name="nofavorite">Your Favorite User Is Empty</string>
+    <string name="nodata">NO DATA</string>
+</resources>

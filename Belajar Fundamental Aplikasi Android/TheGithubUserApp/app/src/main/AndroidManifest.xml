@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dicoding.estomihi.thegithubuserapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <permission android:name="com.dicoding.estomihi.thegithubuserapp.PROVIDER_PERMISSION"/>
+    <permission android:name="com.dicoding.estomihi.thegithubuserapp.READ_DATABASE"
+        android:protectionLevel="normal"/>
+    <permission android:name="com.dicoding.estomihi.thegithubuserapp.WRITE_DATABASE"
+        android:protectionLevel="normal"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheGithubUserApp">
+
+        <provider
+            android:authorities="com.dicoding.estomihi.thegithubuserapp"
+            android:name=".FavoriteProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.dicoding.estomihi.thegithubuserapp.PROVIDER_PERMISSION"
+            android:readPermission="com.dicoding.estomihi.thegithubuserapp.READ_DATABASE"
+            android:writePermission="com.dicoding.estomihi.thegithubuserapp.WRITE_DATABASE"
+            android:grantUriPermissions="true"/>
+
+        <activity android:name=".SplashScreenActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".FavoriteUserActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".DetailUserActivity" />
+
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

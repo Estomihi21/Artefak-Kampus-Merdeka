@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/tv_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/daily_reminder"/>
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_remainder"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:checked="false"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/tv_daily"
+        android:text="@string/time_daily"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_languange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/bg_button_languange"
+        android:text="@string/change_languange"/>
+
+</RelativeLayout>

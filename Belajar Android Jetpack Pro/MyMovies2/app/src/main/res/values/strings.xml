@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyMovies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details_movie">Details %s</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="director">Director : %s </string>
+    <string name="story_line">Storyline</string>
+    <string name="watch_movie">Watch Movie</string>
+    <string name="movie">MOVIE</string>
+    <string name="tv_show">TV SHOW</string>
+    <string name="favorite">Favorite</string>
+    <string name="share_text">Share This App Right Now</string>
+    <string name="share_message">Watch now %s in MovieDB Right Now</string>
+    <string name="tomz_app">Toms App</string>
+    <string name="vote_average">Vote Average : %.2f</string>
+</resources>

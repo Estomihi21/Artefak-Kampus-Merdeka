@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".detail.DetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_arrow_back"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_title_mtv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/img_back"
+            android:layout_toStartOf="@+id/btn_favorite"
+            android:text="@string/details_movie"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textOn=""
+            android:textOff=""
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/favorite_toggle"
+            android:contentDescription="@string/favorite"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_detail_poster"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_title_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_detail_poster"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/ll_lottie"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/movie_title"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_name_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_detail"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/director"
+                android:textColor="#BABFC9"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/tv_title_detail"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/tv_name_director"
+                android:src="@drawable/starfull"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title_detail"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@+id/ll_lottie"
+                android:layout_toEndOf="@+id/iv_star"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="#BABFC9"
+                android:textSize="14sp"
+                tools:text="4.9" />
+
+            <LinearLayout
+                android:id="@+id/ll_lottie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cv_detail_poster"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_button"
+                android:elevation="8dp"
+                android:gravity="center">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieShare"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lottie_rawRes="@raw/share" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_storyline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name_director"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/story_line"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_storyline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_storyline"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/text_story"
+                android:textSize="14sp"
+                tools:text="Hallo" />
+
+            <Button
+                android:id="@+id/btn_watch_movie"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_storyline"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/bg_button_watch"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/watch_movie"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

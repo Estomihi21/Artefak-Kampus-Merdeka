@@ -1,0 +1,2 @@
+rootProject.name = "MyFinalJetpack"
+include ':app'

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.SubFundamental.DetailUserActivity"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/container_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_logo_splash"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/github_logo_splash"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/iv_github_text"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/iv_logo_splash"
+                android:src="@drawable/github_text_splash"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="150dp"
+                android:src="@drawable/ic_baseline_settings_24"
+                android:contentDescription="@string/settings"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/container_action">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/splash"
+                style="@style/Theme.SubFundamental.TextInputLayout"
+                android:hint="@string/hint_search"
+                app:hintTextColor="@color/white"
+                app:placeholderTextColor="@color/white"
+                app:hintAnimationEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_search"
+                    android:textColorHint="@color/white"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textColor="@color/white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:background="@color/splash"
+                android:id="@+id/btn_search"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_baseline_search"
+                android:clickable="true"
+                android:backgroundTint="@color/splash"
+                android:contentDescription="@string/hint_search"
+                android:layout_gravity="end|center_vertical"
+                android:focusable="true" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_list"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_top">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+                <include layout="@layout/shimmer_placeholder_item_user"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:layout_marginBottom="200dp"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/nodataerror" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="170dp"
+                android:textSize="20sp"
+                android:text="@string/nodata" />
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/container_top"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/nav_view"
+            tools:listitem="@layout/item_row_user"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bg_nav_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemIconTint="@drawable/bottom_selector"
+        app:itemTextColor="@drawable/bottom_selector"
+        app:menu="@menu/bottom_menu_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

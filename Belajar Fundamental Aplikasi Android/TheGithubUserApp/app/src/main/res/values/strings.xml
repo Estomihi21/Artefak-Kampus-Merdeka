@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">The Github User App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tomz_app">Tomz App</string>
+    <string name="hint_search">Search</string>
+    <string name="repository"> %d Repository</string>
+    <string name="followers"> %d Followers</string>
+    <string name="following"> %d Following</string>
+    <string name="tab_text_1">Followers</string>
+    <string name="tab_text_2">Following</string>
+    <string name="settings">Settings</string>
+    <string name="nodata">User Not Found</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="nofavorite">Your Favorite User Is Empty</string>
+    <string name="userFavorite">User Favorite</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="time_daily">Reminder every 09.00 AM to return to the application</string>
+    <string name="change_languange">Change Languange</string>
+    <string name="message_reminder">Find out awesome your favorite developers on GitHubFun</string>
+</resources>

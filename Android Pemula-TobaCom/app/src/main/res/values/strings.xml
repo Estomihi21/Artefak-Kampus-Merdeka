@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TobaCom</string>
+    <string name="profile">Profile</string>
+    <string name="my_name">Estomihi Rascana Sirait</string>
+    <string name="my_email">A1141459@bangkit.academy</string>
+    <string name="Computer_name">Nama Komputer</string>
+    <string name="computer_detail">Detail Komputer</string>
+    <string name="computer_name">computer_name</string>
+    <string name="about">About</string>
+</resources>

@@ -17,7 +17,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "API_KEY", '"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"')
+        buildConfigField("String", "API_KEY", '"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"')
     }
 
     buildTypes {

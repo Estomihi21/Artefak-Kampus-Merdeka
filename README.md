@@ -47,8 +47,6 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
 
         -Menggunakan Parcelable sebagai interface dari obyek data yang akan dikirimkan antar Activity. (Terpenuhi)
 
-       
-
       b. Submsission 2 (GitubSearchUser)
        
 
@@ -60,7 +58,7 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
 
         -List Item untuk RecyclerView disusun menggunakan ConstraintLayout. (Terpenuhi)
 
-        -Menggunakan TabLayout, BottomNavigationView, atau yang lainnya sebagai navigasi antara halaman List Follower dan List Following.&n (Terpenuhi)
+        -Menggunakan TabLayout, BottomNavigationView, atau yang lainnya sebagai navigasi antara halaman List Follower dan List Following.&n               (Terpenuhi)
 
         -Terdapat indikator loading saat aplikasi memuat data di semua halaman. (Terpenuhi)
 
@@ -130,7 +128,9 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
        Memastikan TextView untuk storyLine tampil sesuai dengan yang diharapkan.
        Memberikan tindakan klik pada button Share.
        
-       
+     ![WhatsApp Image 2021-07-08 at 07 11 54 (1)](https://user-images.githubusercontent.com/52791697/124843893-21929680-dfbd-11eb-9e68-32fcdf51a520.jpeg)
+     ![WhatsApp Image 2021-07-08 at 07 11 54](https://user-images.githubusercontent.com/52791697/124844134-b5fcf900-dfbd-11eb-9338-6e30d6f712ca.jpeg)
+
 
      b. Submission 2 (Movie2)
        
@@ -196,6 +196,9 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
             Memastikan metode pemanggilan response detail movie terpanggil
             Melakukan pengecekan data response detail movie apakah null atau tidak
             Melakukan pengecekan  Id Movie pada response detail movie apakah sudah sesuai atau belum
+       
+      ![WhatsApp Image 2021-07-08 at 07 12 23 (1)](https://user-images.githubusercontent.com/52791697/124844173-cd3be680-dfbd-11eb-8a78-2702f7cc80ba.jpeg)
+![WhatsApp Image 2021-07-08 at 07 12 23](https://user-images.githubusercontent.com/52791697/124844177-cf9e4080-dfbd-11eb-8617-ece4c9075600.jpeg)
 
 
     c. Submission 3 (MyFinalJetpack)
@@ -294,4 +297,8 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
               Memberi tindakan klik pada tab TV SHOW
               Memastikan rv_favorite_tvShow tidak tampil karena data favorite kosong.
               Memastikan layout_error dalam keadaan tampil.
+       
+  ![WhatsApp Image 2021-07-08 at 07 12 33 (1)](https://user-images.githubusercontent.com/52791697/124844199-db8a0280-dfbd-11eb-946c-4269d8d2ba80.jpeg)
+![WhatsApp Image 2021-07-08 at 07 12 33](https://user-images.githubusercontent.com/52791697/124844204-dfb62000-dfbd-11eb-9a45-a62fe6a0965a.jpeg)
+![WhatsApp Image 2021-07-08 at 07 15 28](https://user-images.githubusercontent.com/52791697/124844210-e2b11080-dfbd-11eb-8da8-2d1207b318e2.jpeg)
 

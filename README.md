@@ -28,6 +28,10 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
         -Menampilkan gambar dan informasi yang relevan pada halaman detail. (Terpenuhi)
 
         -Terdapat halaman about. (Terpenuhi)
+       
+       ![WhatsApp Image 2021-07-08 at 07 58 50 (1)](https://user-images.githubusercontent.com/52791697/124847593-69b5b700-dfc5-11eb-9267-f8b51bc5bea1.jpeg)
+       ![WhatsApp Image 2021-07-08 at 07 58 50](https://user-images.githubusercontent.com/52791697/124847596-6ae6e400-dfc5-11eb-8856-99bd9a5fc27f.jpeg)
+
         
 
 3. Belajar Prinsip Pemrograman SOLID 
@@ -46,6 +50,10 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
         -Menampilkan avatar dan informasi user pada halaman Detail User. (Terpenuhi)
 
         -Menggunakan Parcelable sebagai interface dari obyek data yang akan dikirimkan antar Activity. (Terpenuhi)
+      
+      ![WhatsApp Image 2021-07-08 at 07 42 45 (1)](https://user-images.githubusercontent.com/52791697/124847634-80f4a480-dfc5-11eb-8347-76bd1856609f.jpeg)
+       ![WhatsApp Image 2021-07-08 at 07 42 45](https://user-images.githubusercontent.com/52791697/124847637-8225d180-dfc5-11eb-970a-62a3a9ff770f.jpeg)
+
 
       b. Submsission 2 (GitubSearchUser)
        
@@ -61,6 +69,10 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
         -Menggunakan TabLayout, BottomNavigationView, atau yang lainnya sebagai navigasi antara halaman List Follower dan List Following.&n               (Terpenuhi)
 
         -Terdapat indikator loading saat aplikasi memuat data di semua halaman. (Terpenuhi)
+        
+      ![WhatsApp Image 2021-07-08 at 08 09 52](https://user-images.githubusercontent.com/52791697/124847666-8d78fd00-dfc5-11eb-8e70-385faedc92a5.jpeg)
+      ![WhatsApp Image 2021-07-08 at 08 12 01](https://user-images.githubusercontent.com/52791697/124847672-8fdb5700-dfc5-11eb-9270-d5572add50ff.jpeg)
+
 
       
       c. Submssion3 (TheGithubUserApp)
@@ -74,11 +86,16 @@ Untuk Laporan Akhir kegiatan Kampus Merdeka
 
         -Terdapat pengaturan untuk menghidupkan dan mematikan reminder di halaman Setting. (Terpenuhi)
 
+
         -Daily reminder untuk kembali ke aplikasi yang berjalan pada pukul 09.00 AM. (Terpenuhi)
 
         -Membuat module baru yang menampilkan daftar user favorite dengan menggunakan ContentProvider. (Terpenuhi)
 
         -Mempertahankan semua fitur aplikasi dan komponen yang digunakan pada Submission 2. (Terpenuhi)
+      ![WhatsApp Image 2021-07-08 at 08 18 43](https://user-images.githubusercontent.com/52791697/124847702-9f5aa000-dfc5-11eb-8f48-82103786bace.jpeg)
+      ![WhatsApp Image 2021-07-08 at 08 18 43 (1)](https://user-images.githubusercontent.com/52791697/124847697-9cf84600-dfc5-11eb-9e48-9e0ece02cb49.jpeg)
+      ![WhatsApp Image 2021-07-08 at 08 18 43 (2)](https://user-images.githubusercontent.com/52791697/124847699-9ec20980-dfc5-11eb-8bc8-7d35223b23fc.jpeg)
+
 
 
 5. Belajar Android Jetpack Pro
